@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(18, 197, 56);
+}
+
+main{
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.box{
+    width: 50px;
+    height: 50px;
+    background: rgb(238, 223, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+}
+
+a:link{
+    color: #fff;
+}
+
+a:visited{
+    color: black;
+    font-size: 18px;
+}
+
+a:active{
+    color: green;
+}
+
+.box:first-child{
+    background: rgb(54, 34, 233);
+}
+
+.box:last-child{
+    font-style: 20px;
+}
+
+.box:nth-child(2n){
+    background: rgb(171, 33, 206);
+}
+
+.box:hover{
+    background: red;
+    transition: background 0.5 ;
+}
+
+.element{
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background: rgb(6, 236, 159);
+}
+
+.container::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: rgb(216, 14, 14);
+    position: absolute;
+    left: 35%;
+    border-radius: 50%;
+}
+
+.container::after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: rgb(238, 255, 0);
+    position: absolute;
+    left: 57%;
+    border-radius: 50%;
+}
